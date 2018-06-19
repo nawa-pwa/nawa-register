@@ -1,8 +1,8 @@
 {
-  "name": "@tencent/satarify",
+  "name": "@tencent/nawa-register",
   "version": "0.0.13",
   "description": "resolve the problem of fetch.request path in service worker ",
-  "main": "dist/satarify.min.js",
+  "main": "dist/nawa-register.min.js",
   "scripts": {
     "start": "NODE_ENV=dev ./node_modules/.bin/webpack -w -p",
     "build": "webpack --config webpack.prod.js --env production --progress --colors",
@@ -21,6 +21,6 @@
     "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.8.1"
   },
-  "url": "http://git.code.oa.com/ivweb/satarify",
+  "url": "http://git.code.oa.com/ivweb/nawa-register",
   "dependencies": {}
 }

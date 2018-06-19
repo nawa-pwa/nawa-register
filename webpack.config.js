@@ -7,7 +7,7 @@ const COMPILE = (process.env.NODE_ENV === 'compile');
 let config = {
     devtool: 'hidden-source-map',
     entry: {
-        'satarify': path.join(__dirname,'./src/index'),
+        'nawa-register': path.join(__dirname,'./src/index'),
     },
     output: {
         path: path.join(__dirname, 'dist'),
