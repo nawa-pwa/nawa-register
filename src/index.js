@@ -4,7 +4,7 @@ import asyncDtect from './lib/asyncDetect';
 
 export default class Satarify{
     @register
-    static register(file,options){
+    static syncRegister(file,options){
         return new Promise((res,rej)=>{
             if('serviceWorker' in navigator){
                 navigator
@@ -22,9 +22,9 @@ export default class Satarify{
         })
         
     }
-    static asyncRegister(file,options){
+    static register(file,options){
         if(asyncDtect()){
-            Satarify.register(file.options);
+            Satarify.syncRegister(file.options);
         }
     }
 }
