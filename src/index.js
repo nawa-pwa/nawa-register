@@ -1,7 +1,6 @@
 import {register} from './lib/decorator';
 import asyncDtect from './lib/asyncDetect';
 
-
 export default class Satarify{
     @register
     static syncRegister(file,options){
