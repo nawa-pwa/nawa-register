@@ -1,11 +1,13 @@
-import {register} from './lib/decorator';
+import {defaultOpt} from './lib/store';
 import asyncDtect from './lib/asyncDetect';
 
 export default class Satarify{
-    @register
+
     static syncRegister(file,options){
         return new Promise((res,rej)=>{
             if('serviceWorker' in navigator){
+                
+                options = Object.assign({},defaultOpt,options);
                 navigator
                     .serviceWorker
                     .register(file,options)
@@ -16,14 +18,16 @@ export default class Satarify{
                         rej(err);
                     })
             }else{
-                rej(0)
+                rej("don't support ServiceWorker")
             }
         })
         
     }
     static register(file,options){
         if(asyncDtect()){
-            Satarify.syncRegister(file.options);
+           return Satarify.syncRegister(file.options);
+        }else{
+            return Promise.reject("your browser dont't support async/await")
         }
     }
 }
