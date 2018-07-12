@@ -1,6 +1,6 @@
 {
   "name": "@tencent/nawa-register",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "resolve the problem of fetch.request path in service worker ",
   "main": "dist/nawa-register.min.js",
   "scripts": {
