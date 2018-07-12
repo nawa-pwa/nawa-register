@@ -21,7 +21,7 @@ import nawaRegister from '@tencent/nawa-register';
 nawaRegister.register('./sw.js')
 
 # 如果需要打点上报，可以修改：
-nawa-register.register('./sw.js')
+nawaRegister.register('./sw.js')
 .then(reg=>{
   // 注册成功，可以用来上报
 },status=>{
