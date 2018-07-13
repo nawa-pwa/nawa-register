@@ -6,7 +6,7 @@ export default class Satarify{
     static syncRegister(file,options){
         return new Promise((res,rej)=>{
             if('serviceWorker' in navigator){
-                
+
                 options = Object.assign({},defaultOpt,options);
                 navigator
                     .serviceWorker
@@ -25,7 +25,7 @@ export default class Satarify{
     }
     static register(file,options){
         if(asyncDtect()){
-           return Satarify.syncRegister(file.options);
+           return Satarify.syncRegister(file,options);
         }else{
             return Promise.reject("your browser dont't support async/await")
         }
