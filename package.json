@@ -1,6 +1,6 @@
 {
   "name": "nawa-register",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "resolve the problem of fetch.request path in service worker ",
   "main": "dist/nawa-register.min.js",
   "scripts": {
