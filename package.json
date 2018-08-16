@@ -1,5 +1,5 @@
 {
-  "name": "@tencent/nawa-register",
+  "name": "nawa-register",
   "version": "0.1.21",
   "description": "resolve the problem of fetch.request path in service worker ",
   "main": "dist/nawa-register.min.js",
@@ -21,6 +21,6 @@
     "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.8.1"
   },
-  "url": "http://git.code.oa.com/ivweb/nawa-register",
+  "url": "https://github.com/nawa-pwa/nawa-register",
   "dependencies": {}
 }
